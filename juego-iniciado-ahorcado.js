@@ -1,4 +1,4 @@
-if (location.pathname == '/Alura-Oracle/Desafios/Ahorcado/index.html') {
+if (location.pathname == '/index.html') {
     var boton_info = document.querySelector(".informacion");
     var info = document.querySelector(".info");
 
@@ -13,7 +13,7 @@ if (location.pathname == '/Alura-Oracle/Desafios/Ahorcado/index.html') {
 }
 
 
-if (location.pathname == '/Alura-Oracle/Desafios/Ahorcado/agregar-palabra.html') {
+if (location.pathname == '/agregar-palabra.html') {
     var boton_guardar = document.querySelector("#guardar");
     var nueva_palabra = document.querySelector("#nueva-palabra");
     var nueva = [];
@@ -31,7 +31,7 @@ if (location.pathname == '/Alura-Oracle/Desafios/Ahorcado/agregar-palabra.html')
 };
 
 
-if (location.pathname == '/Alura-Oracle/Desafios/Ahorcado/juego-iniciado.html') {
+if (location.pathname == '/juego-iniciado.html') {
     // variables que contienen elementos del HTML
     var boton_nuevo = document.querySelector("#nuevo");
     var boton_desistir = document.querySelector(".desistir");
