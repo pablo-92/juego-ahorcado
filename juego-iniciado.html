@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Juego del Ahorcado</title>
+  </head>
+  <body>
+    <header>
+      <img id="img-alura" src="./alura.svg" alt="icono-alura" />
+    </header>
+    <main>
+      <div class="contenedor">
+        <canvas width="335" height="492"></canvas>
+
+        <div id="ganaste"><p>HAS GANADO!!</p></div>
+        <div id="perdiste"><p>HAS PERDIDO!!</p></div>
+      </div>
+
+      <div class="intentos">
+        Te queda(n)
+        <span class="cantidad"></span>
+        intento(s)
+      </div>
+
+      <div id="palabra-y-letras-usadas">
+        <div id="palabra-a-adivinar"></div>
+        <div id="letras-usadas"></div>
+      </div>
+
+      <div id="botones2">
+        <button id="nuevo">Nuevo juego</button>
+        <button class="desistir">Desistir</button>
+      </div>
+    </main>
+    <script src="./juego-iniciado-ahorcado.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>Juego del Ahorcado</title>
+  </head>
+  <body>
+    <header>
+      <a target="_blank" href="https://www.aluracursos.com/"
+        ><img class="icono-alura" src="./alura.svg" alt="icono-alura"
+      /></a>
+      <img class="informacion" src="./information.svg" alt="informacion" />
+    </header>
+    <main>
+      <div class="info">
+        <h2>Reglas de Juego</h2>
+        <ul>
+          <li>Al comenzar el juego, una palabra al azar es elegida.</li>
+          <li>Dispones de 7 intentos en total para adivinar la palabra.</li>
+          <li>
+            Una vida se descontara al presionar una letra que no corresponde con
+            la palabra a adivinar.
+          </li>
+          <li>Ganas el juego al adivinar por completo la palabra.</li>
+          <li>
+            Puedes agregar una palabra nueva que el juego tendra en cuenta, a la
+            hora de elegir una al azar, al comienzo del juego.
+          </li>
+        </ul>
+      </div>
+      <div id="botones">
+        <a href="./juego-iniciado.html"
+          ><button id="iniciar">INICIAR JUEGO</button></a
+        >
+        <a href="./agregar-palabra.html"
+          ><button id="agregar">Agregar nueva palabra</button></a
+        >
+      </div>
+    </main>
+    <script src="./juego-iniciado-ahorcado.js"></script>
+  </body>
+</html>

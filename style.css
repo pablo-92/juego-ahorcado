@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --color-principal: #0A3871;
+    --color-secundario: #F3F5FC;
+    --color-terciario: #FFF;
+    --letras-usadas: #AAA;
+    --ganaste: #0F0;
+    --perdiste: #F00;
+    --aceptar: #39AE89;
+    --medio: #F1A74B;
+    --cancelar: #DD7586;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background: var(--color-principal);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 56px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.icono-alura:hover {
+    cursor: pointer;
+}
+
+.informacion {
+    width: 25px;
+}
+
+.informacion:hover {
+    cursor: pointer;
+}
+
+.info {
+    display: none;
+    width: 354px;
+    height: 338px;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    padding: 10px 10px 10px 25px;
+    flex-direction: column;
+    text-align: justify;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+    box-shadow: 0 0 1em var(--color-secundario);
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+/* index.html */
+#botones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#iniciar {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 800;
+    border: 3px solid var(--color-secundario);
+    border-radius: 25px;
+    background: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+#iniciar:hover {
+    border: 3px solid var(--color-secundario);
+    border-radius: 25px;
+    background: var(--color-secundario);
+    color: var(--color-principal);
+    cursor: pointer;
+}
+
+#agregar {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 25px;
+    background: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+#agregar:hover {
+    cursor: pointer;
+    font-weight: 600;
+    background: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+
+/* juego-iniciado.html */
+.contenedor {
+    position: relative;
+}
+
+#ganaste {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 330px;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    background: var(--color-principal);
+    color: var(--ganaste);
+    border: 2px solid var(--ganaste);
+    box-shadow: 0 0 1em var(--ganaste);
+}
+
+#perdiste {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 330px;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    background: var(--color-principal);
+    color: var(--perdiste);
+    border: 2px solid var(--perdiste);
+    box-shadow: 0 0 1em var(--perdiste);
+}
+
+.intentos {
+    color: var(--color-secundario);
+    padding-top: 10px;
+}
+
+.cantidad {
+    color: var(--aceptar);
+}
+
+#palabra-y-letras-usadas {
+    width: 100%;
+    height: 30%;
+}
+
+#palabra-a-adivinar {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span {
+    font-size: 50px;
+    border-bottom: 2px solid var(--color-secundario);
+    width: 40px;
+    margin-right: 10px;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+#letras-usadas {
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+    color: var(--letras-usadas);
+    text-align: center;
+}
+
+#botones2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--letras-usadas);
+}
+
+#nuevo {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 25px;
+    background: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+#nuevo:hover {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--color-principal);
+    background: var(--color-secundario);
+}
+
+.desistir {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 25px;
+    background: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+.desistir:hover {
+    cursor: pointer;
+    background: var(--cancelar);
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+@media (max-width:425px) {
+    .span {
+        font-size: 35px;
+        width: 40px;
+        margin-right: 10px;
+
+    }
+}
+
+/* agregar-palabra.html */
+#nueva-palabra {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    background: var(--color-principal);
+    border: none;
+    font-size: 30px;
+    outline-style: none;
+    color: var(--color-secundario);
+}
+
+#nueva-palabra::placeholder {
+    color: var(--color-secundario);
+}
+
+#nueva-palabra:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+#atencion {
+    width: 100%;
+    color: var(--color-secundario);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#botones3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#guardar {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    border: 3px solid var(--color-secundario);
+    border-radius: 25px;
+    background: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+#guardar:hover {
+    cursor: pointer;
+    background: var(--aceptar);
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+#cancelar {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 25px;
+    background: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+#cancelar:hover {
+    cursor: pointer;
+    background: var(--cancelar);
+    color: var(--color-principal);
+    font-weight: 600;
+}
