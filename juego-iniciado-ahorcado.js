@@ -1,4 +1,4 @@
-if (location.pathname == 'juego-ahorcado/index.html') {
+if (location.pathname == '/juego-ahorcado/') {
     var boton_info = document.querySelector(".informacion");
     var info = document.querySelector(".info");
 
@@ -13,7 +13,7 @@ if (location.pathname == 'juego-ahorcado/index.html') {
 }
 
 
-if (location.pathname == 'juego-ahorcado/agregar-palabra.html') {
+if (location.pathname == '/juego-ahorcado/agregar-palabra.html') {
     var boton_guardar = document.querySelector("#guardar");
     var nueva_palabra = document.querySelector("#nueva-palabra");
     var nueva = [];
@@ -25,13 +25,13 @@ if (location.pathname == 'juego-ahorcado/agregar-palabra.html') {
         } else {
             nueva.push(nueva_palabra.value.toUpperCase());
             localStorage.setItem("nueva", nueva);
-            location.assign("juego-ahorcado/juego-iniciado.html");
+            location.assign("/juego-ahorcado/juego-iniciado.html");
         }
     };
 };
 
 
-if (location.pathname == 'juego-ahorcado/juego-iniciado.html') {
+if (location.pathname == '/juego-ahorcado/juego-iniciado.html') {
     // variables que contienen elementos del HTML
     var boton_nuevo = document.querySelector("#nuevo");
     var boton_desistir = document.querySelector(".desistir");
@@ -51,7 +51,7 @@ if (location.pathname == 'juego-ahorcado/juego-iniciado.html') {
 
     boton_desistir.onclick = (desistir) // vuelve al menu principal
     function desistir() {
-        window.location.assign("juego-ahorcado/index.html");
+        window.location.assign("/juego-ahorcado/");
         localStorage.clear();
     }
 
