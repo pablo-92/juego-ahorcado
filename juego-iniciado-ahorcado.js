@@ -1,4 +1,4 @@
-if (location.pathname == '/juego-ahorcado/') {
+if (location.pathname == '/juego-ahorcado/index.html') {
     var boton_info = document.querySelector(".informacion");
     var info = document.querySelector(".info");
 
@@ -51,7 +51,7 @@ if (location.pathname == '/juego-ahorcado/juego-iniciado.html') {
 
     boton_desistir.onclick = (desistir) // vuelve al menu principal
     function desistir() {
-        window.location.assign("/juego-ahorcado/");
+        window.location.assign("/juego-ahorcado/index.html");
         localStorage.clear();
     }
 
